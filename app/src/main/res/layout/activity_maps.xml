@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar">
+
+    </include>
+    <androidx.drawerlayout.widget.DrawerLayout
+
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7FFFFFF"
+        android:fitsSystemWindows="true"
+        android:minWidth="19dp">
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#F7FFFFFF">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F7FFFFFF"
+                android:orientation="vertical">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F7FFFFFF"
+                    app:subtitleTextColor="#0A0A0A"
+                    app:titleTextColor="#111111" />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/header"
+            app:menu="@menu/main_menu">
+
+        </com.google.android.material.navigation.NavigationView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/map"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 />
+
+            <Button
+                android:id="@+id/Emergency"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="500dp"
+                android:layout_marginTop="415dp"
+                android:layout_marginEnd="224dp"
+                android:layout_marginBottom="5dp"
+                android:background="#359c5e"
+                android:padding="8dp"
+                android:text="Emergency"
+                android:textColor="#ffffff" />
+            <Button
+                android:id="@+id/rescue_volunteer"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="415dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="#359c5e"
+                android:padding="8dp"
+                android:text="Add as Rescue Volunteer"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/weatherforecasting"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="475dp"
+                android:layout_marginEnd="218dp"
+                android:layout_marginBottom="5dp"
+                android:background="#359c5e"
+                android:padding="8dp"
+                android:text="Weather Forecasting"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/Safety_tips"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="535dp"
+                android:layout_marginEnd="92dp"
+                android:layout_marginBottom="5dp"
+                android:background="#359c5e"
+                android:padding="8dp"
+                android:text="Safety Tips"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/donation"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="475dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#359c5e"
+                android:padding="8dp"
+                android:text="Donation"
+                android:textColor="#ffffff" />
+
+
+        </RelativeLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</LinearLayout>

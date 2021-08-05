@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/volcano"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Different Disaster and Their safety tips"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:background="@drawable/button_bg"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        ></TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/turnado"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/bgbtn"
+
+        android:text="Turnado Safety Tips"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/hurricane"
+        android:layout_below="@+id/turnado"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bgbtn"
+        android:text="Hurricane Safety Tips"></Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/thunderstorm"
+        android:layout_below="@id/hurricane"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bgbtn"
+        android:text="Thunderstorm and lightning Safety Tips"></Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/drought"
+        android:layout_below="@id/thunderstorm"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bgbtn"
+        android:text="Drought Safety Tips"></Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/winterstorm"
+        android:layout_below="@id/drought"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bgbtn"
+        android:text="Winter storm Safety Tips"></Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/earthquake"
+        android:layout_below="@+id/winterstorm"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bgbtn"
+        android:text="Earthquake Safety Tips"></Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/flood"
+        android:layout_below="@+id/earthquake"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bgbtn"
+        android:text="Flood Safety Tips"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cyclone"
+
+        android:layout_below="@+id/flood"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bgbtn"
+        android:text="Cyclone Safety Tips"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tsunami"
+        android:layout_below="@+id/cyclone"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bgbtn"
+        android:text="Tsunami Safety Tips"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/volcanoes"
+        android:layout_below="@+id/tsunami"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bgbtn"
+        android:text="Volcanoes Safety Tips"></Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/corona"
+        android:layout_below="@+id/volcanoes"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bgbtn"
+        android:text="Corona Safety Tips"></Button>
+
+
+
+
+
+</RelativeLayout>
